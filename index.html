@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="shortcut icon" href="#">
+    </head>
+    <body>
+        <div class="app">
+            <div class="wrapper">
+               <div class="textarea-wrapper">
+                    <textarea class="from-text" placeholder="Enter Text"></textarea>
+                    <textarea class="to-text" readonly disabled placeholder="Translation"></textarea>
+               </div>
+                <ul class="controls">
+                    <li class="row row-from">
+                        <div class="icons">
+                            <i id="from" class="volume__icon fa-solid fa-volume-high"></i>
+                            <i id="from" class="copy__icon fa-solid fa-copy"></i>
+                        </div>
+                        <select class="selection-table"></select>
+                    </li>
+    
+                    <li class="exchange">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </li>
+    
+                    <li class="row row-to">
+                        <select class="selection-table"></select>                    
+                        <div class="icons">
+                            <i id="to" class="copy__icon fa-solid fa-copy"></i>
+                            <i id="to" class="volume__icon fa-solid fa-volume-high"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="translate-btn">Translate Text</button>
+        </div>
+        <audio src=""></audio>
+        <script type="module" src="./app.js"></script>
+    </body>
+</html>
